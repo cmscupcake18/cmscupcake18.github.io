@@ -1,0 +1,310 @@
+﻿
+<!DOCTYPE html>
+<html class="no-js" ng-app="myapp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GENESIS GUZMAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="images/person_1.jpg">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/icomoon.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/superfish.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/icon.css" rel="stylesheet" />
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+    <div id="fh5co-wrapper" ng-controller="mycontroller">
+        <div id="HOME"><span style="margin-top:220px;"></span></div>
+        <div id="fh5co-page">        
+            <div id="fh5co-header"> <!--NAV-->
+                <header id="fh5co-header-section">
+                    <div class="navbar navbar-inverse navbar-fixed-top ">
+                        <div class="container">
+                            <div class="navbar-header page-scroll">
+                                <button id="menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <span class="navbar-brand">{{B}}</span>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="animate-box"><a href="#HOME" onclick=$("#menu").click();>{{x}}</a></li>
+                                    <li class="animate-box"><a href="#ABOUT" onclick=$("#menu").click();>{{A}}</a></li>
+                                    <li class="animate-box"><a href="#BASIC" onclick=$("#menu").click();>{{z}}</a></li>
+                                    <li class="animate-box"><a href="#PHOTO" onclick=$("#menu").click();>{{Z}}</a></li>
+                                    <li class="animate-box"><a href="#seminar" onclick=$("#menu").click();>{{Y}}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>    <!--NAV-->
+            <div class="fh5co-hero">     <!--INTRO-->
+                <div class="fh5co-overlay"></div>
+                <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+                    <div class="desc animate-box">
+                        <h2>{{B}}</h2>
+                        <span><a class="btn btn-primary btn-lg" href="#ABOUT">{{A}}</a></span>
+                    </div>
+                </div>
+            </div>       
+            <div id="ABOUT"><span style="margin-top:200px;"></span></div><!--ABOUT ME-->
+            <div ng-include="about"></div> 
+            <div id="fh5co-services-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                            <h3><span class="icon-profile-male"> {{A}}</span></h3>
+                            <h4>{{f}}</h4><p>{{C}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services animate-box">
+                                <div ng-include="gen"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services animate-box" style="background-image: url(images/work-1.jpg);background-size:100% 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services animate-box ">
+                                <div ng-include="genn"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--ABOUT ME-->
+           <div id="fh5co-content-section" class="fh5co-section-white">  <!-- SCHOOL -->
+                <div id="fh5co-features">
+                    <div class="container">
+                        <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                            <h1><span class="icon-home2"> {{V}}</span></h1>
+                        </div>
+                        <div class="row" ng-include="school">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- SCHOOL -->         
+            <div id="BASIC"><span style="margin-top:220px;"></span></div>     <!-- KNOWLEDGE -->
+            <div id="fh5co-content-section" class="fh5co-section-gray">
+                <div class="container">
+                    <div class="row text-left">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                                <h1><span class="icon-lightbulb"> {{U}}</span></h1>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fh5co-testimonial text-center animate-box">
+                                <div ng-include="language"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fh5co-testimonial text-center animate-box">
+                                <div ng-include="db"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="fh5co-testimonial text-center animate-box">
+                                <div ng-include="others"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fh5co-testimonial text-center animate-box">
+                                <div ng-include="lib"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>             <!-- KNOWLEDGE -->
+            <div id="PHOTO"><span style="margin-top:220px;"></span></div>      <!-- QUOTES -->
+            <div id="fh5co-portfolio"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center heading-section animate-box">
+                            <h3><span class="icon-images2"> {{W}}</span></h3>
+                            <p>
+                                {{w}} <span style="color:#1abc9e">"{{v}}"</span>, {{u}}<span style="color:#1abc9e">{{t}}</span>
+                                {{s}} <span style="color:#1abc9e">{{r}}</span>
+                                SO <span style="color:#16A085;font-size:25px;">{{q}}</span>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row row-bottom-padded-md">
+                        <div class="col-md-12">
+                            <ul id="fh5co-portfolio-list">
+                                <li class="one-third fh5co-testimonial animate-box" data-animate-effect="fadeIn" style="background-image: url(images/work-5.jpg); ">
+                                    <a href="##" class="color-3">
+                                        <div class="case-studies-summary">
+                                            <span>{{D}}</span>
+                                            <h2>{{p}}</h2>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="one-third fh5co-testimonial animate-box" data-animate-effect="fadeIn" style="background-image: url(images/work-6.jpg); ">
+                                    <a href="##" class="color-4">
+                                        <div class="case-studies-summary">
+                                            <span>{{D}}</span>
+                                            <h2> {{o}}</h2>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="one-third fh5co-testimonial animate-box" data-animate-effect="fadeIn" style="background-image: url(images/work-1.jpg); ">
+                                    <a href="##" class="color-4">
+                                        <div class="case-studies-summary">
+                                            <span>{{D}}</span>
+                                            <h2>{{m}}</h2>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="one-third fh5co-testimonial animate-box" data-animate-effect="fadeIn" style="background-image: url(images/pro1.jpg); ">
+                                    <a href="##" class="color-3">
+                                        <div class="case-studies-summary">
+                                            <span>{{D}}</span>
+                                            <h2>{{l}}</h2>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="one-third fh5co-testimonial animate-box" data-animate-effect="fadeIn" style="background-image: url(images/friend.jpg); ">
+                                    <a href="##" class="color-4">
+                                        <div class="case-studies-summary">
+                                            <span>{{D}}</span>
+                                            <h2>FRIEND</h2>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="one-third fh5co-testimonial animate-box" data-animate-effect="fadeIn" style="background-image: url(images/nature.jpg); ">
+                                    <a href="##" class="color-4">
+                                        <div class="case-studies-summary">
+                                            <span>{{D}}</span>
+                                            <h2>NATURE LOVER</h2>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>           <!-- QUOTES -->
+            <div id="seminar"></div>   <!-- SEMINARS -->        
+            <div id="fh5co-content-section" class="fh5co-section-gray">
+                <div class="col-md-8 col-md-offset-2 text-center heading-section">
+                    <h3 class="animate-box"><span class="icon-code"></span>{{X}}</h3>
+                    <p></p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h4>{{E}}</h4>
+                            <p class="animate-box">
+                                <span style="color:#1abc9c">
+                                    {{k}}<br />
+                                    {{j}}<br />
+                                    {{i}}<br />
+                                    {{h}}<br />
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>{{F}}</h3>
+                            <p class="animate-box"><span style="color:#1abc9c">{{L}}</span></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>{{G}}</h3>
+                            <p class="animate-box">
+                                {{M}} <span style="color:#1abc9c">{{nameA}}</span><br />
+                                {{O}}Date: <span style="color:#1abc9c">{{R}} 27 {{P}}</span>
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>{{H}}</h3>
+                            <p class="animate-box">
+                                {{M}}<span style="color:#1abc9c">{{nameA}}</span><br />
+                                {{O}}<span style="color:#1abc9c">{{R}} 27 {{P}}</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>{{I}}</h3>
+                            <p class="animate-box">
+                                {{M}}<span style="color:#1abc9c">{{nameB}}</span><br />
+                                {{O}}Date:<span style="color:#1abc9c">{{S}} 3 {{P}}</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>{{J}}</h3>
+                            <p class="animate-box">
+                                {{M}}<span style="color:#1abc9c">{{nameC}}</span><br />
+                                {{O}}<span style="color:#1abc9c">{{S}} 11 {{P}}</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <h3>{{K}}</h3>
+                            <p class="animate-box">
+                                {{M}}<span style="color:#1abc9c">{{nameD}}</span><br />
+                                {{O}}Date:<span style="color:#1abc9c">{{T}} 1 {{P}}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>       <!-- SEMINARS -->
+            <footer> <!-- CONTACT -->
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-2 text-center">
+                                <h3 class="animate-box"><span style="color:white">{{g}}</span></h3>
+                                <p>
+                                    <a class="animate-box"><i class="icon-mobile2 animate-box"></i>{{num}}</a><br />
+                                    <a href="https://www.facebook.com/Cmscupcake.com"><i class="icon-facebook22 animate-box"></i> {{B}}</a><br />
+                                    <a href="https://www.google.com/Cmscupcake18.com"><i class="icon-google2 "></i> {{B}}</a>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-md-offset-2 text-center">
+                                    <p class="fh5co-social-icons">
+                                        <a href="##"><i class="icon-user animate-box"></i></a>
+                                    </p>
+                                    <p class="">
+                                        <a href="##">{{B}}</a>
+                                        <br /> {{nameE}}<br />{{nameF}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+<!-- CONTACT --></footer>    
+        </div>
+    </div>
+
+    <!-- script -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/gen.js"></script>
+
+</body>
+</html>
+
