@@ -1,0 +1,6 @@
+c:\users\genesis\documents\visual studio 2013\Projects\PORFOLIO\PORFOLIO\bin\PORFOLIO.dll.config
+c:\users\genesis\documents\visual studio 2013\Projects\PORFOLIO\PORFOLIO\bin\PORFOLIO.dll
+c:\users\genesis\documents\visual studio 2013\Projects\PORFOLIO\PORFOLIO\bin\PORFOLIO.pdb
+c:\users\genesis\documents\visual studio 2013\Projects\PORFOLIO\PORFOLIO\obj\Debug\PORFOLIO.dll
+c:\users\genesis\documents\visual studio 2013\Projects\PORFOLIO\PORFOLIO\obj\Debug\PORFOLIO.pdb
+C:\Users\GENESIS\Documents\Visual Studio 2013\Projects\PORFOLIO\PORFOLIO\obj\Debug\PORFOLIO.csprojResolveAssemblyReference.cache
