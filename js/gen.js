@@ -5,7 +5,7 @@ angular.module("myapp", [])
                   $scope.num ="+63 910 8847547"
 				  $scope.A = "ABOUT ME";
 				  $scope.B = "GENESIS GUZMAN";
-				  $scope.C = "To work with the Company who makes used of full knowledge and skills of the things that I have learned through the years and to gain more confidence for personal and future advancement.";
+				  $scope.C = "I am looking for a suitable On-the-Job Training where i could practice my knowledge and developed my personality as a career person while utilizing my skills.";
 				  $scope.D = "As a";
 				  $scope.E = "LEADING THE DEVELOPMENT OPPORTUNITY THROUGH INFORMATION TECHNOLOGY";
 				  $scope.F = "Y4iT RESEARCH SUMMIT 2016";
