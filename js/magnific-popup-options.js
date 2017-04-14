@@ -46,3 +46,10 @@ $(document).ready(function() {
 	magnifVideo();
 
 });
+
+
+
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+});
+//ken<-1
