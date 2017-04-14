@@ -118,6 +118,19 @@
 
 	//kenjin  <<---
 	
+	
+	
+	
+	
+	
+	$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+});
+
+	
+	
+	
+	
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
