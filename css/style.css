@@ -317,6 +317,8 @@ figure {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
+
 .nav-header {
   position: relative;
   float: left;
@@ -505,6 +507,40 @@ figure {
 .fh5co-section-gray {
   background: rgba(0, 0, 0, 0.04);
 }
+
+
+
+	.shhh {
+padding-bottom:15px;
+	padding-top:5px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;	
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.shhh img#picz {
+	width:75px; 
+	height:75px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;	
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+#picz {
+padding-top:10px;
+
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;	
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/*kenjin*/
 
 .heading-section {
   padding-bottom: 1em;
