@@ -32,7 +32,7 @@ angular.module("myapp", [])
 				  $scope.x = "HOME";
 				  $scope.w = "if you FAIL never give up because F.A.I.L means";
 				  $scope.v = "First Attemp In Learning";
-				  $scope.u = "END is not the End, in fact E.N.D mean";
+				  $scope.u = "END is not the End, in fact E.N.D means";
 				  $scope.t = "EFFORT NEVER DIES";
 				  $scope.s = "if you get NO as an answer,Remember N.O means";
 				  $scope.r = "NEXT OPPORTUNITY";
