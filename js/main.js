@@ -98,9 +98,20 @@
    
 	
 	
-	
+		function resizeHeaderOnScroll() {
+  const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+  shrinkOn = 200,
+  headerEl = document.getElementById('js-header');
+  
+  if (distanceY > shrinkOn) {
+    headerEl.classList.add("shhh");
+  } else {
+    headerEl.classList.remove("shhh");
+  }
+}
+window.addEventListener('scroll', resizeHeaderOnScroll);
 
-
+//kenjin  --->>
 	$(function() {
         $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
